@@ -1,5 +1,5 @@
 # Applying Lesson 1
-After completing lesson 1, which focused on classifying whether an image was a bird or not, I adapted the provided _00-is-it-a-bird_ code to now classify 10 different types of animal. To do this, instead of downloading bird and forest images, photos of 10 chosen animals were instead searched for. 
+After completing lesson 1, which focused on classifying whether an image was a bird or not, I adapted the provided _00-is-it-a-bird_ code to now classify 10 different types of animal. To do this, instead of downloading bird and forest images, photos of 10 chosen animals were searched for. 
 
 When trying to resize the downloaded images, I experienced a warning that I did not encounter with the original code. This error was _UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images_. After briefly looking into the warning, it appeared to be an issue associated with PNG images, so my solution was to add code to remove all images of this format:
 ```
