@@ -30,6 +30,6 @@ From this discovery, I ended up deleting the searches for sun and shade images a
 | Condition | Incorrect Classifications |
 |-|-|
 | Sun and Shade Photos Included | 11% |
-| No Sun and Shade Photos | 1.8% |
+| Sun and Shade Photos Excluded | 1.8% |
 
 [^1]: [relevantThread](https://stackoverflow.com/questions/70839890/pil-remove-error-userwarning-palette-images-with-transparency-expressed-in-byt)
