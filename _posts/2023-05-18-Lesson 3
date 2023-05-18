@@ -5,36 +5,3 @@ Lesson 3 covers the mathematical foundations of deep learning. This is extremely
 ![maths image](https://github.com/bridgetcasey1/bridgetcasey1.github.io/assets/113487655/3330cfc6-5482-4abb-8df0-ddad1065fc9e)
 
 Deep learning is a type of machine learning based on artificial neural networks and I found it cool being introduced to the concept of neural networks as an infinitely flexible function with multiple parameters that you adjust to mould to your data and to solve the problem at hand.
-
-# Lesson 4
-This lesson focused on Natural Language Processing (NLP) and fine tuning a pre-trained NLP model using the Hugging Face Transformers library. And actually didn’t use fastai at all! This was all very new to me but one thing I found noteworthy was the fact that to get good at being a language model, a neural network needs to be good at a lot of things, not just about language and how it is structured but also knowledge about the topic at hand, which could include all sorts of information about the world.
-
-I think it's cool that NLP can be used for sentiment analysis with the example given of determining if a IMDb rating is negative or positive. It reminded me of an application that a friend of mine was working on at a bank, which involved detecting and classifying complaints in real-time.
-
-This was also my first introduction to the Hugging Face hug where pre-trained models can be found with the idea being that if a model was developed to solve a similar problem or trained using similar data then it's a good starting point for the current problem. 
-
-![standing on the shoulders of giants quote](https://github.com/bridgetcasey1/bridgetcasey1.github.io/assets/113487655/5c096fd6-ed7c-4acd-bb06-c33edbba95c4)
-
-This lesson also introduced me to the concept of overfitting and underfitting. Underfitting is where the model does not fit the data well at all and systematically incorrect:
-
-![underfit example](https://github.com/bridgetcasey1/bridgetcasey1.github.io/assets/113487655/be9656f4-1fb7-417d-8af6-ed8227a25619)
-
-Overfitting is where the model fits the exact data points extremely well:
-![overfit example](https://github.com/bridgetcasey1/bridgetcasey1.github.io/assets/113487655/574446f2-1878-4b2a-9118-c25ec5405672)
-
-However results in poor performance with the addition of extra data. It is easy to detect underfitting as the training data will not be well represented. Overfitting is trickier! I was then taught the usefulness of the validation set used when training a model. From the original dataset, ~20% is removed and the model is trained to fit the remaining data points and then performance is tested using the removed data points. Simple but brilliant! 
-
-# Lesson 5
-I really enjoyed this lesson and being stepped through how to __create a neural network from scratch__! We worked with the same problem presented in Lesson 3, which was predicting the survival of Titanic passengers based on parameters such as sex and fare price. 
-
-![titatnic](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/RMS_Titanic_3.jpg/300px-RMS_Titanic_3.jpg)
-
-Data preparation is a new concept to me. But it makes sense. To be able to fit a model to a dataset, the data has to be in a form that can be worked with. Techniques include:
-- Use mode values to fill missing values 
-- Using dummy variables to convert categories to numbers (e.g. male and female represented as 0 and 1)
-- Taking the log of a parameter to convert a long-tailed distribution to something models can more easily work with
--- This will often occur with parameters that grow exponentially such as population 
-- Set all data values to be floats
-
-After preparing the data, a linear model was then set-up and trained. The details of which I will not get into but very cool to see the process! Also, the take-away message ended up being that you shouldn't tart from scratch except for learning before Jeremy goes on to show how quickly and easily fastai can do the things we just spent over an hour manually doing. Great for appreciating the magic of AI!
-![magic wand](https://dictionaryblog.cambridge.org/wp-content/uploads/2017/11/magic-wand.jpg)
