@@ -25,4 +25,6 @@ Overfitting is where the model fits the exact data points extremely well:
 However results in poor performance with the addition of extra data. It is easy to detect underfitting as the training data will not be well represented. Overfitting is trickier! I was then taught the usefulness of the validation set used when training a model. From the original dataset, ~20% is removed and the model is trained to fit the remaining data points and then performance is tested using the removed data points. Simple but brilliant! 
 
 # Lesson 5
-I really enjoyed this lesson and being stepped through how to __create a neural network from scratch__! 
+I really enjoyed this lesson and being stepped through how to __create a neural network from scratch__! We worked with the same problem presented in Lesson 3, which was predicting the survival of Titanic passengers based on parameters such as sex and fare price. 
+
+
