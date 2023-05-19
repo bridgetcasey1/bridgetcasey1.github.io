@@ -13,7 +13,7 @@ for o in searches:
     resize_images(path/o, max_size=400, dest=path/o)
 ```
 
-As most photos were not PNG images, only a small percentage of the images were deleted. To compensate for this, I adapted my original search to now download a maximum of 250 images (instead of the original 200). This method succesfully solved the problem, however there appears to be other solutions that don't require all PNG images to be deleted [^1].
+As most photos were not PNG images, only a small percentage of the images were deleted. To compensate for this, I adapted my original search to now download a maximum of 250 images (instead of the original 200). This method succesfully solved the problem, however there appears to be other solutions that don't require all PNG images to be deleted [^1]. This number of max images to be downloaded was also found to give the best performance with increasing further resulting in unrelated/unwanted images being downloaded.
 
 Something I noticed was that the code provided in lesson 1 of the fastai code made three different searches for animal photos including sun and shade photos. For example for giraffe photos, three different search terms are used: 
 - giraffe photo
