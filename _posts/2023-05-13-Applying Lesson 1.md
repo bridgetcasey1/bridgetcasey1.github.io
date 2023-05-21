@@ -1,5 +1,5 @@
 # Applying Lesson 1
-After completing lesson 1, which focused on classifying whether an image was a bird or not, I adapted the provided _00-is-it-a-bird-creating-a-model-from-your-own-data_ code to now classify 10 different animal types. To do this, instead of downloading bird and forest images, photos of 10 chosen animals were searched for. 
+After completing lesson 1, which focused on classifying whether an image was a bird or not, I adapted the provided _00-is-it-a-bird-creating-a-model-from-your-own-data_ code to now classify 10 different animals. To do this, instead of downloading bird and forest images, photos of the 10 chosen animals were searched for. 
 
 When trying to resize the downloaded images, I experienced a warning that I did not encounter with the original code. This error was _UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images_. After briefly looking into the warning, it appeared to be an issue associated with PNG images, so my solution was to add code to remove all images of this format:
 ```
@@ -13,9 +13,9 @@ for o in searches:
     resize_images(path/o, max_size=400, dest=path/o)
 ```
 
-As most photos were not PNG images, only a small percentage of the images were deleted. To compensate for this, I adapted my original search to now download a maximum of 250 images (instead of the original 200). This method succesfully solved the problem, however there appears to be other solutions that don't require all PNG images to be deleted [^1]. This number of max images to be downloaded was also found to give the best performance with increasing further resulting in unrelated/unwanted images being downloaded.
+As most of the downloaded photos were not PNG images, only a small percentage of the images were deleted. To compensate for this, I adapted my original search to now download a maximum of 250 images (instead of the original 200). This method succesfully solved the problem, however there appears to be other solutions that don't require all PNG images to be deleted [^1].
 
-Something I noticed was that the code provided in lesson 1 of the fastai code made three different searches for animal photos including sun and shade photos. For example for giraffe photos, three different search terms are used: 
+Something I noticed was that the provided _is-it-a-bird_ code made three different searches, which included searching for sun and shade photos. For example for giraffe photos, three different search terms are used: 
 - giraffe photo
 - giraffe sun photo
 - giraffe shade photo
@@ -39,7 +39,8 @@ From this discovery, I ended up deleting the searches for sun and shade images a
 | Condition | Classifcation Accuracy |
 |-|-|
 | Sun and Shade Photos Included | 89% |
+|-|-|
+| Sun and Shade Photos Included | 89% |
 
 If interested in the code I have included my notebook here: [Animal Classification Notebook](/pdf/ELEC4630_A3_Q2.pdf)
-
 [^1]: [relevantThread](https://stackoverflow.com/questions/70839890/pil-remove-error-userwarning-palette-images-with-transparency-expressed-in-byt)
