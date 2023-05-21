@@ -31,7 +31,7 @@ From this discovery, I ended up deleting the searches for sun and shade images a
 |-|-|
 | Sun and Shade Photos Included | 89% |
 |-|-|
-| Sun and Shade Photos Excluded | 98.2% |
+| Sun and Shade Photos Excluded | 98% |
 
 If interested in the code I have included my notebook here: [Animal Classification Notebook](/pdf/ELEC4630_A3_Q2.pdf).
 
