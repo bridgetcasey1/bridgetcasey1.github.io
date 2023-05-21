@@ -26,8 +26,8 @@ I assume this is done to train the model using images of varying lighting. Howev
 The searches including the _sun_ term also resulted in unwanted images such as a lion sun tattoo: 
 ![lion sun tattoo](https://github.com/bridgetcasey1/bridgetcasey1.github.io/assets/113487655/8c11a78e-3658-4441-b596-57c360baab4d)
 
-From this discovery, I ended up deleting the searches for sun and shade images and improved classification was achieved:
-| Condition | Classifcation Accuracy |
+From this discovery, I ended up deleting the searches for sun and shade images and searching for animal photos only and improved classification was achieved:
+| Condition | Classification Accuracy |
 |-|-|
 | Sun and Shade Photos Included | 89% |
 |-|-|
@@ -35,4 +35,4 @@ From this discovery, I ended up deleting the searches for sun and shade images a
 
 If interested in the code I have included my notebook here: [Animal Classification Notebook](/pdf/ELEC4630_A3_Q2.pdf)
 
-[^1]: [relevantThread](https://stackoverflow.com/questions/70839890/pil-remove-error-userwarning-palette-images-with-transparency-expressed-in-byt)
+[^1]: [Relevant thread](https://stackoverflow.com/questions/70839890/pil-remove-error-userwarning-palette-images-with-transparency-expressed-in-byt)
