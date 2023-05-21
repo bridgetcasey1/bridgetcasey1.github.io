@@ -33,6 +33,10 @@ From this discovery, I ended up deleting the searches for sun and shade images a
 |-|-|
 | Sun and Shade Photos Excluded | 98% |
 
+| Column 1 | Column 2 |
+|-|-|
+| A thing | Another thing |
+
 If interested in the code I have included my notebook here: [Animal Classification Notebook](/pdf/ELEC4630_A3_Q2.pdf).
 
 [^1]: [Relevant thread](https://stackoverflow.com/questions/70839890/pil-remove-error-userwarning-palette-images-with-transparency-expressed-in-byt)
