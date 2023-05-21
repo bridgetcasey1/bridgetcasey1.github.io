@@ -22,6 +22,7 @@ Something I noticed was that the code provided in lesson 1 of the fastai code ma
 
 I assume this was done to train the model with images of varying lighting, however it gave rise to some interesting results. For example, the searches which included the _shade_ term often resulted in images with the animal on a lamp shade as below:
 ![giraffe lampshade](https://cdn.notonthehighstreet.com/fs/15/ef/b5bb-3c1c-430a-a39e-e281ddc90e0e/original_giraffes-lampshade.jpg)
+![original_giraffes-lampshade-1929795158](https://github.com/bridgetcasey1/bridgetcasey1.github.io/assets/113487655/d92339bd-a881-4559-9b17-5546ce25611c)
 
 The searches including the _sun_ term also resulted in unwanted images such as a lion sun tattoo: 
 ![lion sun tattoo](https://s-media-cache-ak0.pinimg.com/736x/91/6e/ff/916effac525e26e7420f54790722800f.jpg)
