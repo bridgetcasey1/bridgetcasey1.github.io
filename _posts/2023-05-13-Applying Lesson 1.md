@@ -27,11 +27,6 @@ The searches including the _sun_ term also resulted in unwanted images such as a
 ![lion sun tattoo](https://github.com/bridgetcasey1/bridgetcasey1.github.io/assets/113487655/8c11a78e-3658-4441-b596-57c360baab4d)
 
 From this discovery, I ended up deleting the searches for sun and shade images and searching for animal photos only and improved classification was achieved:
-| Condition | Classification Accuracy |
-|-|-|
-| Sun and Shade Photos Included | 89% |
-|-|-|
-| Sun and Shade Photos Excluded | 98% |
 
 | Condition | Classification Accuracy |
 |-|-|
