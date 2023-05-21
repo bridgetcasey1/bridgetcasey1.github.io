@@ -15,27 +15,18 @@ for o in searches:
 
 As most of the downloaded photos were not PNG images, only a small percentage of the images were deleted. To compensate for this, I adapted my original search to now download a maximum of 250 images (instead of the original 200). This method succesfully solved the problem, however there appears to be other solutions that don't require all PNG images to be deleted [^1].
 
-Something I noticed was that the provided _is-it-a-bird_ code made three different searches, which included searching for sun and shade photos. For example for giraffe photos, three different search terms are used: 
-- giraffe photo
-- giraffe sun photo
-- giraffe shade photo
+Something I noticed was that the provided _is-it-a-bird_ code made three different searches, which included searching for sun and shade photos. For example, when searching for bird photos, three different search terms are used: 
+- bird photo
+- bird sun photo
+- bird shade photo
 
-I assume this was done to train the model with images of varying lighting, however it gave rise to some interesting results. For example, the searches which included the _shade_ term often resulted in images with the animal on a lamp shade as below:
+I assume this is done to train the model using images of varying lighting. However, it gave rise to some interesting results when I adapted the code to search for the 10 animals. For example, the searches which included the _shade_ term often resulted in images with the animal on a lamp shade as below:
 ![giraffe lampshade](https://github.com/bridgetcasey1/bridgetcasey1.github.io/assets/113487655/d92339bd-a881-4559-9b17-5546ce25611c)
 
 The searches including the _sun_ term also resulted in unwanted images such as a lion sun tattoo: 
 ![lion sun tattoo](https://github.com/bridgetcasey1/bridgetcasey1.github.io/assets/113487655/8c11a78e-3658-4441-b596-57c360baab4d)
 
 From this discovery, I ended up deleting the searches for sun and shade images and improved classification was achieved:
-| Condition | Incorrect Classifications |
-|-|-|
-| Sun and Shade Photos Included | 11% |
-| Sun and Shade Photos Excluded | 1.8% |
-
-| Column 1 | Column 2 |
-|-|-|
-| A thing | Another thing |
-
 | Condition | Classifcation Accuracy |
 |-|-|
 | Sun and Shade Photos Included | 89% |
@@ -43,4 +34,5 @@ From this discovery, I ended up deleting the searches for sun and shade images a
 | Sun and Shade Photos Excluded | 98.2% |
 
 If interested in the code I have included my notebook here: [Animal Classification Notebook](/pdf/ELEC4630_A3_Q2.pdf)
+
 [^1]: [relevantThread](https://stackoverflow.com/questions/70839890/pil-remove-error-userwarning-palette-images-with-transparency-expressed-in-byt)
